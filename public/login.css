@@ -1,0 +1,34 @@
+/* PALETA DE COLORES */
+:root {
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --grisOscuro: #666;
+    --grisClaro: #ebebeb;
+    --verde: #39b54a;
+}
+
+
+.login{
+    display: flex;
+   flex-direction: column;
+    background-color: var(--grisClaro) ;
+    padding:5vw 25vw;
+}
+
+
+#boton{
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 3vh;
+    background-color: var(--celeste);
+    color: var(--blanco);
+
+}
+
+.nombre-contraseña{border: none;
+    border-radius: 5px;
+    padding: 2vh;
+    margin: 1vw;}

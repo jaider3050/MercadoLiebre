@@ -1,0 +1,259 @@
+/* TIPOGRAFIAS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* PALETA DE COLORES */
+:root {
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --grisOscuro: #666;
+    --grisClaro: #ebebeb;
+    --verde: #39b54a;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--grisClaro);
+}
+
+
+header {
+    background-color: var(--amarillo);
+    font-family: Roboto;
+    font-size: 12px;
+}
+
+
+
+#logo{font-size: 50%;
+width: 50%;
+margin: 0%;
+}
+
+.buscar{
+    font-size: 50%;
+    width:45vw;
+    margin:0%;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+#encabezado {
+    text-align: center;
+}
+
+ul {
+    padding-left: 0%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+.centrar {
+    display: flex;
+    justify-content: center;
+}
+
+.cuadrado {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--celeste);
+    width: 32px;
+    height: 34px;
+    border-radius: 20%;
+    margin-bottom: 15px;
+}
+
+.burger-menu {
+    color: white;
+    background-color: var(--celeste);
+}
+
+#banner {
+    width: 100%;
+}
+
+main {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+section{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+
+.titulares {
+    font-family: Roboto;
+    font-size: 18px;
+    color: var(--grisOscuro);
+}
+
+.articulos {
+    margin-bottom: 10px;
+    background-color: white;
+    margin: 15px;
+}
+
+.image {
+    width: 90%;
+    font-size:2.3vw;
+}
+
+.articulos2 {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+
+}
+
+.subarticulos {
+    border-top: 1px solid #ebebeb;
+    background-color: white;
+    width: 90%;
+}
+
+
+
+
+.circulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+}
+
+.fa-truck {
+    color: var(--verde);
+}
+
+
+.renglon {
+    display: flex;
+}
+
+
+.precios {
+    font-family: Roboto;
+    font-size: 18px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    width: 30%;
+}
+
+.descuentos {
+    font-family: Roboto;
+    font-size: 16px;
+    color: var(--verde);
+    margin-top: 0px;
+    width: 70%;
+}
+
+.descripciones {
+    font-family: Roboto;
+    font-size: 16px;
+    color: var(--grisOscuro);
+}
+
+
+
+.pie {
+    text-align: center;
+}
+
+.fa-credit-card,
+.fa-gift,
+.fa-user-shield {
+    color: var(--celeste);
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.encabezado2 {
+    font-family: Roboto;
+    font-size: 18px;
+    color: var(--grisOscuro);
+    margin: 0px;
+}
+
+.descripcion {
+    font-family: Roboto;
+    font-size: 14px;
+    margin-top: 2px;
+    margin-bottom: 50px;
+}
+
+
+
+/* Navegacion Smarthphone */
+@media (min-width: 350px) and (max-width:600x) {
+    .descripcion {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+}
+
+/* Navegación en tablets 40*/
+@media (min-width: 601px) and (max-width:1110px) {
+    .articulos {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 40%;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .centrar {
+        display: none;
+    }
+
+    .descripciones{display: none;}
+
+    .superior{display: flex;
+        align-items: center;}
+}
+
+/* Navegación en desktop 21*/
+@media (min-width: 1111px) {
+    
+    .articulos {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 21%;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .centrar {
+        display: none;
+    }
+
+    .descripciones{
+        display: none;
+    }
+
+    .superior{display: flex;
+        align-items: center;}
+
+}
